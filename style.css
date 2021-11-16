@@ -6,6 +6,13 @@
     background-color: #FFFBFE;
 }
 
+.imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .box {
     width: 100%;
     height: 600px;
@@ -13,7 +20,7 @@
 
 .section-1 {
     height: 100vh;
-    background-image: url("john-schnobrich-2FPjlAyMQTA-unsplash.jpg");
+    background-image: url("nasa-Q1p7bh3SHj8-unsplash.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -33,8 +40,8 @@ div.navbar {
 
 div.topnav {
     padding: 20px 50px 0px;
-    background: none;
-    float: right;
+    background: black;
+    width: 100%;
 }
 
 a {
@@ -48,6 +55,7 @@ a {
     transition: .5s;
     font-weight: bold;
     z-index: 1;
+    align-items: center;
 }
 
 a.active {
@@ -57,7 +65,7 @@ a.active {
 
 .section-2 {
     background: #FFFBFE;
-    height: 40vh;
+    height: 60vh;
 }
 
 h1 {
@@ -108,7 +116,7 @@ p {
 h11{
     background-color:transparent !important;
     padding: 50px 50px 50px;
-    color: red;
+    color: white;
     font-weight: bold;
     font-size: 80px;
     text-align: center;
@@ -120,7 +128,7 @@ h11{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
 }
 
 .container {
@@ -129,7 +137,7 @@ h11{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60vh;
+    height: 40vh;
 }
 
 .chevron {
@@ -188,3 +196,17 @@ h11{
         transform: translateY(4.8rem) scale(0.5);
     }
 }
+
+sectoin12 {
+    width: 50%;
+    align-self: center;
+    padding: 0px 150px 150px;
+}
+
+p1{
+    padding: 0px 150px 150px;
+    display: inherit;
+    text-align: left;
+    font-size: 20px;
+}
+
