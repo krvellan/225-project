@@ -13,8 +13,6 @@
             <a class="active" href="etl-process.html">ETL-Process</a>
             <a href="qr.html">Query/Results</a>
             <a href="Visualizations.html">Visualizations</a>
-            <a href="Contributions.html">Contributions</a>
-            <a href="References.html">References</a>
         </div>
     </div>
     <div class="section12">
@@ -29,6 +27,21 @@
             We then took the transformed data and loaded it using AWS Glue and redshift (which was used to create the
             tables and query the data). Using the datasets we have also created tables to show the parameters of the
             tables</p1>
+        <img src="ssetl1.png" width="468.75" height="215.25" class="imgcenter">
+        <br><br>
+        <p>The process of the ETL pipline is outlined above for both the datasets we used.</p>
+        <br><br>
+        <p1>The 5 step Glue job steps that we used are as follows: load, map, filter, flatten, write. <br>
+            In the extracting part of our project we loaded all the files from OpenAQ public S3 bucket source directory.
+            For the transform part, we mapped and dropped data accordingly and cleaned the data prepping it to be
+            used in out load process. From here to load the data we wrote scripts which would target the correct data
+            to be analyzed.
+        </p1>
+        <img src="ssetl2.png" width="468.75" height="215.25" class="imgcenter">
+        <p1>The data was joined using the columns which could be connected which was time. Both datasets had an hourly
+            time stamp which was used. To keep the tables compatible we had to create new columns. This process prepared
+            us for the analysis part of comparing the AQ/temperature/precipitation over time.</p1>
+        <img src="ssetl3.png" width="468.75" height="215.25" class="imgcenter">
     </div>
 </body>
 </html>
